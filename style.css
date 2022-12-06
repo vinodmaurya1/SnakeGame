@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Nanum+Gothic&family=Ubuntu:wght@300&display=swap");
+
+
+
+
+body {
+  background-image: url(./image/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: 85rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#board {
+  border: 2px solid black;
+  width: 90vmin;
+  height: 92vmin;
+  display: grid;
+  border-radius: 20px;
+  background: linear-gradient(rgb(79 236 222), rgb(18 170 228));
+  grid-template-rows: repeat(25, 1fr);
+  grid-template-columns: repeat(25, 1fr);
+}
+
+.head {
+
+    background-image: url(./image/snakeHead.png);
+  background-size: 35px;
+  background-repeat: no-repeat;
+}
+.snake {
+  background-image: url(./image/snakeTail.png);
+  background-size: 25px;
+  background-repeat: no-repeat;
+   
+}
+
+.food {
+background-image: url(./image/snakeFood.png);
+background-size: 35px;
+background-repeat: no-repeat;
+}
+
+
+#scoreBox{
+  position: absolute;
+  top: 10px;
+  right: 80px;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Baloo Bhai 2", cursive;
+}
+#hiscoreBox{
+  position: absolute;
+  top: 70px;
+  right: 80px;
+  font-size: 40px;
+  font-family: "Baloo Bhai 2", cursive;
+  font-weight: bolder;
+}
